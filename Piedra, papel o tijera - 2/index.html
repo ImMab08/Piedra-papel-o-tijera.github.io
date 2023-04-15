@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Mokepon</title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="CSS/styles.css">
+
+        <!-- JAVASCRIPT -->
+        <script src="JS/script.js"></script>
+
+        <!-- ICONS -->
+        <script src="https://kit.fontawesome.com/482895e713.js" crossorigin="anonymous"></script>
+
+        <!-- GOOGLE FONTS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
+
+    </head>
+
+    <body>
+
+        <h1 id="titulo">Piedra, papel o tijera</h1>
+
+        <section id="seleccionar-cientifico">
+
+            <div class="circle-1"></div>
+            <div class="circle-2"></div>
+            <div class="circle-3"></div>
+            <div class="box">
+            
+                <h2>Escoge un cientifico</h2>
+
+                <div class="cientificos">
+                    <input type="radio" name="cientificos" id="tesla">
+                    <label id="cientifico-tesla" class="tarjeta-cientificos" for="tesla">
+                        <h3>Nikolas Tesla</h3>
+                        <img class="tesla" src="/Piedra, papel o tijera - 2/IMG/tesla-seleccion.png" alt="">
+                    </label>
+                    
+        
+                    <input type="radio" name="cientificos" id="einstein">
+                    <label id="cientifico-einstein" class="tarjeta-cientificos" for="einstein">
+                        <h3>Albert Einstein</h3>
+                        <img class="einstein" src="/Piedra, papel o tijera - 2/IMG/albert-seleccion.png" alt="">
+                    </label>
+                    
+    
+                    <input type="radio" name="cientificos" id="darwin">
+                    <label id="cientifico-darwin" class="tarjeta-cientificos" for="darwin">
+                        <h3>Charles Darwin</h3>
+                        <img class="darwin" src="/Piedra, papel o tijera - 2/IMG/darwin-seleccion.png" alt="">
+                    </label>
+                    
+
+                    <input type="radio" name="cientificos" id="hawking">
+                    <label id="cientifico-hawking" class="tarjeta-cientificos" for="hawking">
+                        <h3>Stephen Hawking</h3>
+                        <img class="hawking" src="/Piedra, papel o tijera - 2/IMG/hawking-seleccion.png" alt="">
+                    </label>
+                    
+    
+                    <input type="radio" name="cientificos" id="newton">
+                    <label id="cientifico-newton" class="tarjeta-cientificos" for="newton">
+                        <h3>Isaac Newton</h3>
+                        <img class="newton" src="/Piedra, papel o tijera - 2/IMG/newton-seleccion.png" alt="">
+                    </label>
+                    
+        
+                    <input type="radio" name="cientificos" id="pythagoras">
+                    <label id="cientifico-pythagoras" class="tarjeta-cientificos" for="pythagoras">
+                        <h3>Pythagoras</h3>
+                        <img class="pythagoras" src="/Piedra, papel o tijera - 2/IMG/pitagoras-seleccion.png" alt="">
+                    </label>
+                    
+                </div>
+
+                <button id="boton-mascota">Seleccionar</button>
+            </div>
+
+        </section>
+
+        <section id="seleccionar-ataques">
+
+        <h3 class="vs">VS</h3>
+        
+            <div class="ataques">
+                <div class="datos-jugador">
+                    <div class="datos-p-jugador">
+                        <p id="vidas-jugador">3</p>
+                        <p id="mascota-jugador"></p>
+                    </div>
+                    <div id="img-cientificos"></div>
+                </div>
+
+                <div class="datos-enemigo">
+                    <div class="datos-p-enemigo">
+                        <p id="vidas-enemigo">3</p>
+                        <p id="mascota-enemigo"></p>
+                    </div>
+                    <div id="img-cientificos-enemigo"></div>
+                </div>
+            </div>    
+            
+            <div class="datos-partida">
+                <h2>Elige tu ataque</h2>
+
+                <div class="boton__ataques">
+                    <button class="boton-ataques-piedra" id="boton-piedra">Piedra</button>
+                    <button class="boton-ataques-papel" id="boton-papel">papel</button>
+                    <button class="boton-ataques-tijera" id="boton-tijera">tijera</button>
+                </div>
+    
+                <div id="mensajes">
+                    <p id="resultado">¡Comencemos!</p>
+                </div>
+
+                <section id="reiniciar">
+                    <button id="boton-reiniciar">Reiniciar</button>
+                </section>
+    
+                <div class="datos-ataques">
+                    <div id="ataques-del-jugador"></div>
+                    <div id="ataques-del-enemigo"></div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
